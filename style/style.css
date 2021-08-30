@@ -34,6 +34,129 @@ body {
 }
 .text {
   margin-top: 20px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.score {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+}
+.points {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  font-size: 1rem;
+  border: 2px solid black;
+  text-align: center;
+}
+.carts {
+  flex-basis: 20%;
+  height: 100%;
+  font-size: 0;
+}
+.carts-img {
+  height: 80%;
+}
+.carts-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+}
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  text-align: center;
+  border-style: none;
+  color: white;
+  background-color: red;
+}
+button.random {
+  background-color: green;
+}
+
+.second-player {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  flex-basis: 30%;
+  height: 100%;
+}
+.active {
+  background-color: green;
+  color: white;
+}
+.win {
+  background-color: gold;
+}
+
+@media (orientation: landscape) {
+  .text {
+    margin-top: 0px;
+  }
+  .score {
+    top: 30%;
+  }
+  .carts {
+    flex-basis: 30%;
+    height: 100%;
+    font-size: 0;
+  }
+  button {
+    width: 50%;
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) and (orientation: portrait) {
+  .text {
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+  .score {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+  }
+  .points {
+    bottom: 10%;
+    width: 50%;
+    font-size: 4rem;
+  }
+  .carts {
+    flex-basis: 30%;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* .wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 30%;
+  height: 60vh;
+}
+.first-player {
+  position: relative;
+  background-color: rgba(3, 3, 36, 0.4);
+  flex-basis: 30%;
+  height: 100%;
+}
+.text {
+  margin-top: 20px;
   font-size: 2rem;
   letter-spacing: 2px;
   text-align: center;
@@ -100,4 +223,4 @@ button.random {
 }
 .win {
   background-color: gold;
-}
+} */
