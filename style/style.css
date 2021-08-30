@@ -119,6 +119,60 @@ button.random {
     font-size: 2rem;
   }
 }
+@media (orientation: landscape) and (min-width: 1024px) {
+  .text {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+  .score {
+    position: absolute;
+    top: 30%;
+    font-size: 3rem;
+  }
+  .points {
+    bottom: 10%;
+    width: 50%;
+    font-size: 4rem;
+  }
+  .carts {
+    flex-basis: 30%;
+  }
+}
+@media (orientation: landscape) and (min-width: 1240px) {
+  .text {
+    margin-top: 20px;
+    font-size: 3rem;
+  }
+  .score {
+    top: 40%;
+    font-size: 4.5rem;
+  }
+  button {
+    width: 40%;
+    margin-top: 40px;
+    font-size: 3rem;
+  }
+  button.random {
+    margin-left: 10%;
+  }
+}
+@media (orientation: landscape) and (min-width: 1440px) {
+  .text {
+    margin-top: 30px;
+    font-size: 3rem;
+  }
+
+  .score {
+    top: 30%;
+    font-size: 4.5rem;
+  }
+
+  .carts {
+    flex-basis: 20%;
+    height: 100%;
+    font-size: 0;
+  }
+}
 @media (min-width: 768px) and (orientation: portrait) {
   .text {
     margin-top: 30px;
